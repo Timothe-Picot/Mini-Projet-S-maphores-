@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de gestion des sémaphores</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Utilisation du CDN pour charger la bibliothèque W2UI -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/w2ui/1.4.3/w2ui.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/w2ui/1.4.3/w2ui.min.js" ></script>
+    <!-- Utilisation du CDN pour charger la bibliothèque Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="Buttons">
+        <button class="GrandBouton" onclick="ouvrirPopup()">Ajouter un sémaphore</button>
+        <button class="GrandBouton" onclick="trierParDate()">Trier par date de visite</button>
+    </div>
+    <div id="grid"></div>
+    <div id="map" style="height: 400px;"></div>
+</body>
+</html>
